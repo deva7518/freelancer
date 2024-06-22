@@ -1,0 +1,547 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.background{
+    background: linear-gradient(#eefff9 0%, pink 50%, #dcdbff 100%);
+    height: 100vh;
+    width: 100%;
+}
+
+.nav-bar{
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 12vh;
+}
+.logo{
+    margin-right: 0%;
+    margin-left: 20%;
+}
+.logo img{
+    width: 70px;
+    border-radius: 50%;   
+}
+.nav-bar li{
+    list-style: none;
+    margin-right: 30%;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-bar li a{
+    text-decoration: none;
+    padding: 10px;
+    background: linear-gradient(to right,#000000 0%, rgb(0, 0, 0) 50%, #000000 100%);
+    background-clip: text;
+    color: transparent;    
+}
+.nav-bar li a:hover{
+    color: white;
+}
+
+
+
+.navbar2{
+    padding: 15% 10%;
+}
+.navbar2 h1{
+    font-size: 8vw;
+    font-family: url(font1.otf);
+    line-height: 7vw;
+    padding-bottom: 20px;
+}
+
+.navbar2 button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    align-items: center;
+}
+.navbar2 button:hover{
+   background: linear-gradient(to right,#eefff9 0%, pink 50%, #dcdbff 100%);
+   border: 2px solid white;
+   border-radius: 50px;
+   color: black;
+}
+.hero-btn{
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    font-size: 18px;
+    
+}
+.navbar2 p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family:  'Roboto', sans-serif;
+    padding-left: 8px;
+    background: linear-gradient(to right, #000000 , #00ffff , black);
+    background-clip: text;
+    color: transparent;
+}
+.user-img{
+    position: absolute;
+    right: 13%;
+    bottom: 0;
+}
+
+
+/*------------animation----------*/
+
+.navbar2 h1 span{
+    background: linear-gradient(grey,black);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%
+    
+}
+.navbar2 h1 span:first-child{
+    animation: textcolor1 3s linear infinite alternate;
+   ;
+}
+.navbar2 h1 span:last-child{
+    animation: textcolor2 3s linear infinite alternate;
+}
+    
+@keyframes textcolor1{
+    0%{
+        background-size: 0%;
+    }
+    50%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+@keyframes textcolor2{
+    0%{
+        background-size: 0%;
+    }
+    50%{
+        background-size: 0%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){ 
+    .background{
+        height: 80vh;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .nav-bar{
+        position: relative;
+    }
+    .user-img{
+        width: 80%;
+        height: 60vh;
+        right: 35px;
+        top: 20%;
+        position: absolute;
+        
+    }
+    .nav{
+        position: absolute;
+        bottom: 25%;
+        left: 15px;
+        right: 10px;
+        
+    }
+    .nav h1{
+        padding-left: 15px;
+        font-size: 60px;
+        line-height: 15vw;
+    }
+    .nav p{
+        background: linear-gradient( black , grey, black);
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .hero-btn{
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        font-size: 15px;
+}
+.hero-btn:hover{
+    color: rgb(0, 0, 0);
+}
+}
+
+
+
+
+
+
+
+.navbar-2{
+    background: linear-gradient( rgba(97, 97, 97, 0.452) ,rgb(25, 25, 25));
+    margin-top: 10px;
+}
+.wave{
+    -webkit-box-reflect: below -28px linear-gradient(transparent, rgb(0, 0, 0)); 
+    text-align: center;
+}
+.wave span{
+    color: #000000;
+    font-size: 4rem;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: waviy 1.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes waviy{
+    0%,
+    40%,
+    100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}
+
+.intro{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    background: transparent;
+}
+.imgage{
+    width: 50%;
+    background: transparent;
+}
+.imgage img{
+    width: 60%;
+    margin: 100px 225px;
+    cursor: pointer;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px black);
+    animation: glow 1s alternate infinite 
+}
+@keyframes glow{
+    0%{
+        filter: drop-shadow(0 0 0px black);
+    }
+    100%{ filter: drop-shadow(0 0 10px black);
+
+    }
+}
+.about{
+    width: 60%;
+    padding-top: 110px; 
+}
+.about h1{
+    padding-bottom: 10px;
+    font-family: 'Overpass', sans-serif;
+}
+.about h2{
+    padding-bottom: 10px;
+    font-family:  'Roboto', sans-serif;
+    background: linear-gradient(#00ffff , rgb(255, 192, 192) , rgb(255, 79, 109));
+    background-clip: text;
+    color: transparent;
+}
+.about p2{
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+.abou p{
+    background: linear-gradient(white , rgb(135, 135, 135) );
+    color: transparent;
+    background-clip: text;
+}
+.abou{
+    font-size: 18px;
+    padding-top: 20px;
+}
+.abou ul{
+    display: flex;
+    padding-bottom: 10px;
+    font-family: 'Overpass', sans-serif;
+    background: linear-gradient(white  , rgb(135, 135, 135) );
+    color: transparent;
+    background-clip: text;
+}
+.abou1 p1{
+    padding-left: 20px;
+}.abou2 p1{
+    padding-left: 6px;
+}.abou3 p1{
+    padding-left: 42px;
+}.abou4 p1{
+    padding-left: 44px;
+}.abou5 p1{
+    padding-left: 6px;
+}.abou6 p1{
+    padding-left: 6px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .wave span{
+        font-size: 3rem;
+    }
+    .intro{
+        height: 115vh;
+        width: 50%;
+        background: transparent;
+        display: grid;
+    }
+    .imgage{
+        background: transparent;
+        height: 0;
+    }
+    .imgage img{
+        width: 90%;
+        margin: 40px 90px;
+        
+    }
+
+    .about{
+        background: transparent;
+        width: 100%;
+        text-align: center;
+        padding: 10px 5px;
+        left: 50px;
+        height: 55vh;
+        
+    }
+    .about h1{
+        margin-left: 10px;
+    }
+    .about h2{
+        font-family:  'Roboto', sans-serif;
+        background: linear-gradient(#00ffff , rgb(81, 81, 81) , rgb(255, 79, 109));
+        background-clip: text;
+        color: transparent;
+    }
+    .abou{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .abou ul{
+        display: flex;
+    }
+
+}
+
+/*-----------service--------*/
+
+.background1{
+
+    background: url(background.jpeg);
+    background-size: cover;
+}
+.service{
+    margin-top: 10px;
+    height: 110vh;
+    text-align: center;
+    color: white;
+}
+.service p{
+    font-size: 20px;
+    padding-top: 20px;
+    font-family:  'Roboto', sans-serif;
+}
+.service h1{
+    font-size: 30px;
+    padding-top: 5px;
+    font-family:  'Roboto', sans-serif;
+}
+.service p1{
+    font-size: 16px;
+    font-family:  'Roboto', sans-serif;
+}
+.first-box{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+.box1{
+    background: rgba(255, 255, 255, 0.06);
+    width: 30%;
+    height: 35vh;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.box1:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.14) ,rgba(132, 255, 253, 0.123) , rgba(91, 230, 248, 0.364) );
+    transition-duration: 1.5s;
+}
+.box1 img{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 30%;
+}
+.box1 li{
+    list-style: none;
+    margin-top: 15px;
+}
+.box1 li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+.box2{
+    background: rgba(255, 255, 255, 0.06);
+    width: 30%;
+    height: 35vh;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}.box2:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.14) ,rgba(132, 255, 253, 0.123) , rgba(248, 143, 91, 0.364) );
+    transition-duration: 1.5s;
+}
+.box2 img{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 30%;
+}
+.box2 li{
+    list-style: none;
+    margin-top: 15px;
+}
+.box2 li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+   
+}
+.box3{
+    background: rgba(255, 255, 255, 0.06);
+    width: 30%;
+    height: 35vh;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.box3:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.14) ,rgba(132, 255, 206, 0.123) , rgba(240, 248, 91, 0.364) );
+    transition-duration: 1.5s;
+}
+.box3 img{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 30%;
+}
+.box3 li{
+    list-style: none;
+    margin-top: 15px;
+}
+.box3 li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+
+.second-box{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+.box4{
+    background: rgba(255, 255, 255, 0.06);
+    width: 30%;
+    height: 35vh;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.box4:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.14) ,rgba(132, 255, 253, 0.123) , rgba(248, 91, 193, 0.364) );
+    transition-duration: 1.5s;
+}
+.box4 img{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 30%;
+}
+.box4 li{
+    list-style: none;
+    margin-top: 15px;
+}
+.box4 li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+.box5{
+    background: rgba(255, 255, 255, 0.06);
+    width: 30%;
+    height: 35vh;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+.box5:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.14) ,rgba(132, 163, 255, 0.123) , rgba(170, 91, 248, 0.364) );
+    transition-duration: 1.5s;
+}
+.box5 img{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 30%;
+}
+.box5 li{
+    list-style: none;
+    margin-top: 15px;
+}
+.box5 li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+.box6{
+    background: rgba(255, 255, 255, 0.06);
+    width: 30%;
+    height: 35vh;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.box6:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.14) ,rgba(132, 255, 253, 0.123) , rgba(91, 248, 149, 0.364) );
+    transition-duration: 1.5s;
+}
+.box6 img{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 30%;
+}
+.box6 li{
+    list-style: none;
+    margin-top: 15px;
+}
+.box6 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Overpass', sans-serif;
+}
+
+button{
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    font-family: 'Overpass', sans-serif;
+}
